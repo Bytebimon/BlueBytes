@@ -1,45 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title class="Heading_1">BlueBytes</title>
+    <title>BlueBytes</title>
+    <link rel="stylesheet" href="index.css">
     <style>
-        body {
-            background-color: black;
+        :root {
+            --primary-glow: #00ffff;
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-main: #f0f6fc;
+            --text-muted: #8b949e;
         }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .button2 {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #000000;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            transition: background-color 0.2s, transform 0.2s;
+        }
+
+        .button2:hover {
+            background-color: #e0e0e0;
+            transform: translateY(-2px);
+        }
+
+        .container {
+            max-width: 700px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--text-muted);
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 10px;
+        }
+
+        .par {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 15px;
+        }
+
         .button {
             display: inline-block;
-            padding: 10px 20px;
-            background-color: #007bff;
+            padding: 12px 24px;
+            background-color: #1f6feb;
             color: white;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background-color 0.2s, transform 0.2s;
         }
-         .button2 {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: white;
-            color: black;
-            text-decoration: none;
-            border-radius: 5px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        .button:hover {
+            background-color: #388bfd;
+            transform: translateY(-2px);
         }
     </style>
-    <nav>
-            <a class="button2" href="OurProjects.html" target="_blank">Our projects</a>
-            <a class="button2" href="events.html" target="_blank">Events</a>
-            <a class="button2" href="store.html" target="_blank">Store</a>
-            <a class="button2" href="Requests.html" target="_blank">Special Requests</a>
-    </nav>
 </head>
 <body>
-    <h1 class="h_1_1">"Hello From the BlueBytes team"</h1>
-    <p class="par">So you're probably wondering what we are:</p>
-    <p class="par">We make games (such as ByteBimon, and develop for the Arduboy) and well that's kinda all rlly.</p>
-    <p class="par">Founded By Joshua, Manroop, Ruby and Brayden</p>
-    <h2> Some popular games / projects Games</h2>
-    <a class="button" href="https://ByteBimon.github.io" target="_blank">ByteBimon</a>
+
+    <nav>
+        <a class="button2" href="OurProjects.html" target="_blank">Our Projects</a>
+        <a class="button2" href="events.html" target="_blank">Events</a>
+        <a class="button2" href="store.html" target="_blank">Store</a>
+        <a class="button2" href="Requests.html" target="_blank">Special Requests</a>
+    </nav>
+
+    <div class="container">
+        <h1>"Hello From the BlueBytes Team"</h1>
+        <p class="par">So you're probably wondering what we are:</p>
+        <p class="par">We make games (such as ByteBimon, and develop for the Arduboy) and well, that's kinda all rlly.</p>
+        <p class="par"><strong>Founded By Joshua, Manroop, Ruby, and Brayden</strong></p>
+        
+        <h2>Some Popular Games & Projects</h2>
+        <br>
+        <a class="button" href="https://ByteBimon.github.io" target="_blank">ByteBimon</a>
+    </div>
+
 </body>
 </html>
